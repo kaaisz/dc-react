@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import Image from "../components/image";
+import SEO from "../components/seo";
+import Card from "../components/Card";
 
 const IndexPage = () => (
   <Layout>
@@ -11,9 +12,9 @@ const IndexPage = () => (
     <div>
       <div className="Hero">
         <div className="HeroGroup">
-          <h1>Learn to<br/>design and code React apps</h1>
-          <p>Complete courses about the best tools and design systems. Prototype and build apps with React.</p>
-          <p>Now go build something great.</p>
+          <h1 className="Hero__title">Learn to<br/>design and code React apps</h1>
+          <p className="Hero__text">Complete courses about the best tools and design systems. Prototype and build apps with React.</p>
+          <p className="Hero__text">Now go build something great.</p>
           {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
             <Image />
           </div> */}
@@ -40,6 +41,27 @@ const IndexPage = () => (
                         "/>
             </path>
           </svg>
+        </div>
+        <div className="Cards">
+          <h2 className="Cards__header">11 Courses, more coming</h2>
+          <div className="CardGroup">
+            <Card 
+              title="Design System" 
+              text="10 sections" 
+              image={require('../images/wallpaper.jpg')}/>
+            <Card 
+              title="React for Designers" 
+              text="12 sections" 
+              image={require('../images/wallpaper2.jpg')}/>
+            <Card 
+              title="Sound Design" 
+              text="12 sections" 
+              image={require('../images/wallpaper3.jpg')}/>
+            <Card 
+              title="ARkit 2" 
+              text="12 sections" 
+              image={require('../images/wallpaper4.jpg')}/>
+            </div>
         </div>
       </div>
     </div>
