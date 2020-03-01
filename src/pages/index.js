@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 import Card from "../components/Card";
+import Section from '../components/Section';
 
 const IndexPage = () => (
   <Layout>
@@ -61,8 +62,14 @@ const IndexPage = () => (
               title="ARkit 2" 
               text="12 sections" 
               image={require('../images/wallpaper4.jpg')}/>
-            </div>
+          </div>
         </div>
+        <Section 
+          image={require('../images/wallpaper2.jpg')}
+          logo={require('../images/logo-react.png')}
+          title="React for Designers"
+          text="Learn how to build a modern site using React and site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify."
+        />
       </div>
     </div>
   </Layout>
